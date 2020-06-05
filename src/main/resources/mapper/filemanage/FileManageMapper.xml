@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.erick.aiomp.mapper.filemanage.FileManageMapper">
+
+    <!--文件上传    -->
+    <insert id="uploadFile" parameterType="cn.erick.aiomp.entity.file.UploadFileDB">
+        INSERT INTO  ap_upload_file (id,filename,filetype,filepath,fileuser,filemodule) values (#{id},#{fileName},#{fileType},#{filePath},#{fileUser},#{fileModule});
+    </insert>
+</mapper>
